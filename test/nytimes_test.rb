@@ -17,8 +17,7 @@ class NytimesTest < Minitest::Test
   end
 
   def test_it_can_get_array_of_stories
-  skip
-    #Set your code to the local variable, "result"
+    results = @hash[:results]
 
     assert result.is_a? (Array)
     assert_equal 44, result.count
@@ -26,7 +25,7 @@ class NytimesTest < Minitest::Test
 
   def test_it_can_get_all_stories_with_subsection_of_politics
     #Set your code to the local variable, "result"
-    skip
+    binding.pry
 
     assert result.is_a? (Array)
     assert_equal 6, result.count
